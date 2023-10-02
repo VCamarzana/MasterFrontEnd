@@ -1,0 +1,48 @@
+$color: #ff0000;
+
+.theme {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.box {
+    color: white;
+    display: flex;
+    margin: 5px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 70px;
+    &.base {
+        background-color: ($color);
+    }
+    &.important {
+        background-color: darken($color, 30%);
+    }
+    &.warning {
+        background-color: lighten($color, 30%);
+    }
+    &.shadow {
+        color: $color;
+        box-shadow: 5 5 10px rgb(0, 0, 0, 0.8);
+    }
+}
+
+.principal-font {
+    font: {
+        family: 'Courier New', Courier, monospace;
+        size: 1.5em;
+        weight: bold;
+    }
+    margin: 20px;
+}
+
+.secondary-font {
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+    margin-bottom: 20px;
+}

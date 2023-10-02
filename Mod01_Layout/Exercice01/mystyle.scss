@@ -1,0 +1,74 @@
+$color01: rgb(191, 64, 125);
+$color02: #4060bf;
+$color03: #41c0ba;
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-width:min-content;
+}
+@mixin color-palette($color) {
+    @for $i from 1 through 4{
+        &.darken-#{$i}{
+            background-color: darken($color, $i * 9%);
+        }
+    }
+    &.base-color {
+        min-width: 90px;
+        border-radius: 20%;
+        background-color: $color;
+        span.color-box-text {
+            color: white;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+    }
+    @for $i from 1 through 4{
+        &.lighten-#{$i}{
+            background-color: lighten($color, $i * 9%);
+        }
+    }
+    
+}
+
+.box {
+    display: flex;
+    margin: 5px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: 0 2 10px #000;
+}
+
+.color-box-text {
+    mix-blend-mode: difference;
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container-1 {
+    margin-bottom: 30px;
+    display: inline-flex;
+    flex-wrap: auto;
+    .box {
+        @include color-palette($color01);
+    }
+}
+
+.container-2 {
+    @extend .container-1;
+    .box {
+        @include color-palette($color02);
+    }
+}
+
+.container-3 {
+    @extend .container-1;
+    .box {
+        @include color-palette($color03);
+    }
+}

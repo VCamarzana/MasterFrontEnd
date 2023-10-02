@@ -1,0 +1,135 @@
+/* 
+- Diseño Desktop (ancho 1280px min)
+Ancho mínimo top: 225px 
+Ancho mínimo first, second: 250px
+5 más populares
+Cabecera siempre visible
+Zoom con el ratón
+
+- Diseño Tablet (ancho 1280px max)
+Desaparece "Warner live"
+3 más populares.
+
+- Diseño Móvil (ancho 720px max)
+Disposición en columna.
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Jost");
+
+body {
+  background-color: #141414;
+  color: white;
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  margin: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  background-color: #141414;
+  margin-bottom: 50px;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  & .platform-title {
+    padding: 10px;
+    font-size: 1.2em;
+  }
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+  & div {
+    padding: 10px;
+  }
+  & div:hover {
+    color: blue;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 3px;
+  }
+}
+
+#top-text::before {
+  content: "5";
+  font-weight: bold;
+}
+
+.top {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 22px 0;
+  min-height: 290px;
+  &-item {
+    transition: all 0.3s ease;
+    img {
+      min-width: 225px;
+      max-width: 100%;
+    }
+    &:hover {
+      margin: 0 2%;
+      transform: scale(1.2);
+    }
+  }
+}
+
+.first,
+.second {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 20px 0px;
+  .item {
+    display: flex;
+    min-width: 250px;
+    transition: all 0.3s ease;
+    flex: 1;
+    img {
+      flex: 1;
+      min-width: 250px;
+      max-width: 100%;
+    }
+    &:hover {
+      margin: 0 2%;
+      transform: scale(1.2);
+      z-index: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .platform-title {
+    display: none;
+  }
+  .top-item:nth-child(-n + 2) {
+    display: none;
+  }
+  #top-text::before {
+    content: "3";
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .top {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .first,
+  .second {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-title {
+    text-align: center;
+    font-size: 1.5em;
+  }
+}

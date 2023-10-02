@@ -1,0 +1,47 @@
+body {
+  background-color: #e6e6e6;
+  margin: 50px;
+}
+
+.card {
+  grid-template-columns: repeat(3, minmax(160px, 300px));
+  gap: 5px;
+  display: grid;
+}
+
+.container {
+  background-color: #fff;
+  grid-template-columns: minmax(160px, 300px);
+  justify-items: stretch;
+  display: grid;
+  box-shadow: 0 0 2px #525252;
+}
+
+.container article {
+  margin: 10px;
+  font-family: Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif;
+  font-size: 1em;
+}
+
+.container .date {
+  text-align: end;
+}
+
+.container .date span {
+  color: #73a824;
+}
+
+.container button {
+  color: #fff;
+  background-color: #73a824;
+  border: none;
+  width: 100%;
+  height: 60px;
+  font-size: 1.2em;
+}
+
+.container button:hover {
+  background-color: #8fc938;
+}
+
+/*# sourceMappingURL=index.76be517e.css.map */
