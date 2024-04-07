@@ -1,0 +1,22 @@
+<img
+  src="../../../assets/logo.png"
+  alt="Logo Verónica Camarzana"
+  height="95px"
+/>
+@if (isLogged()){
+<app-private-menu></app-private-menu>
+<p>{{ getUsername() }}</p>
+<a routerLink="/dashboard" class="nav-button" (click)="logout()"> Logout </a>
+} @else {
+<app-public-menu></app-public-menu>
+<p></p>
+<a
+  routerLinkActive="selected"
+  routerLink="/login"
+  class="nav-button"
+  (click)="isLogged()"
+>
+  Login
+</a>
+
+}

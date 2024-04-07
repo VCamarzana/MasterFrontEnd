@@ -1,0 +1,36 @@
+.pages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 140px;
+  margin-bottom: 100px;
+}
+
+app-header {
+  display: grid;
+  grid-template-columns: 260px auto 200px 100px;
+  align-items: center;
+  background-color: #48a377;
+  width: 100%;
+  color: #2c2c2c;
+  position: fixed;
+  top: 0;
+  height: 140px;
+  z-index: 2;
+}
+app-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #48a377;
+  width: 100%;
+  color: #2c2c2c;
+  position: fixed;
+  bottom: 0;
+  height: 80px;
+  z-index: 2;
+}

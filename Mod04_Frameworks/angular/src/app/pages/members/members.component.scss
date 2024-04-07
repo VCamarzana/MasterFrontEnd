@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  margin-bottom: 100px;
+  gap: 5%;
+}
+
+.content {
+  width: 100%;
+  padding: 20px;
+}
+
+h1,
+table {
+  min-width: 500px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border-bottom: 1px solid #48a377;
+  text-align: left;
+  padding: 5px;
+  height: 100%;
+}
+
+img {
+  display: flex;
+  width: 50px;
+  max-height: 50px;
+  border-radius: 50%;
+}
+
+.delete-button {
+  padding-left: 25px;
+}

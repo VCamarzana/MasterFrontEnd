@@ -1,0 +1,26 @@
+div {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  width: 300px;
+}
+
+mat-card {
+  position: fixed;
+  padding: 140px;
+  margin: -20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #777777b0;
+}
+.text-fail {
+  font-size: 14px;
+  color: #48a377;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 50vh;
+}

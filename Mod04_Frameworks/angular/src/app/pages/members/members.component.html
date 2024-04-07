@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="content">
+    <app-member-add [members]="members"></app-member-add>
+    <app-member-edit
+      [member]="memberSelected"
+      (saveEvent)="save($event)"
+    ></app-member-edit>
+  </div>
+  <div class="content">
+    <h1>Members List</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Avatar</th>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let member of members" (click)="select(member)">
+          <td class="circular-image">
+            <img [src]="member.avatar_url" />
+          </td>
+          <td>
+            <span>{{ member.id }}</span>
+          </td>
+          <td>
+            <span>{{ member.login }}</span>
+          </td>
+          <td>
+            <button
+              class="delete-button"
+              mat-raised-button
+              (click)="delete(member)"
+            >
+              <mat-icon color="accent"> backspace</mat-icon>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

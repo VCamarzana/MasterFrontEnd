@@ -1,0 +1,86 @@
+<div class="container">
+  <h1>The 10 most hilarious movies of all time.</h1>
+  <mat-card class="image-list">
+    <button
+      class="slice-buttons"
+      color="accent"
+      mat-raised-button
+      (click)="prevPage()"
+      [disabled]="currentPage === 0"
+    >
+      <mat-icon> arrow_back_ios </mat-icon>
+    </button>
+    <div
+      class="slice-div"
+      *ngFor="
+        let image of images
+          | slice
+            : currentPage * imagesPerPage
+            : (currentPage + 1) * imagesPerPage
+      "
+    >
+      <img
+        [src]="image.src"
+        [alt]="image.title"
+        [width]="thumbnailWidth"
+        [height]="thumbnailHeight"
+        (click)="selectImage(image)"
+        [class.selected-border]="image.id === currentImg.id"
+      />
+    </div>
+    <button
+      class="slice-buttons"
+      color="accent"
+      mat-raised-button
+      (click)="nextPage()"
+      [disabled]="(currentPage + 1) * imagesPerPage >= images.length"
+    >
+      <mat-icon>arrow_forward_ios</mat-icon>
+    </button>
+  </mat-card>
+  <div class="selected-image">
+    <div class="controls">
+      <button
+        class="arrow-buttons"
+        color="accent"
+        mat-raised-button
+        (click)="prev()"
+        [disabled]="currentImg.id === 1"
+      >
+        <mat-icon> arrow_back_ios </mat-icon>
+      </button>
+      <img
+        #imageTitle
+        [src]="currentImg.src"
+        [alt]="currentImg.title"
+        [height]="currentImg.height"
+      />
+      <button
+        class="arrow-buttons"
+        color="accent"
+        mat-raised-button
+        (click)="next()"
+        [disabled]="currentImg.id === images.length"
+      >
+        <mat-icon> arrow_forward_ios </mat-icon>
+      </button>
+    </div>
+  </div>
+  <div class="zoom">
+    <button mat-fab color="" (click)="expand()">
+      <mat-icon color="accent">zoom_in</mat-icon>
+    </button>
+    @if(playing){
+    <button mat-fab color="warn" (click)="stop()">
+      <mat-icon>stop</mat-icon>
+    </button>
+    }@else {
+    <button mat-fab (click)="play()">
+      <mat-icon>play_arrow</mat-icon>
+    </button>
+    }
+    <button mat-fab color="" (click)="reduce()">
+      <mat-icon color="accent">zoom_out</mat-icon>
+    </button>
+  </div>
+</div>

@@ -1,0 +1,76 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.selected-image {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 5px;
+}
+
+.image-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.slice-div {
+  margin-top: 5px;
+}
+h1 {
+  text-align: center;
+}
+img {
+  z-index: 1;
+}
+
+.slice-buttons {
+  margin: 0 10px;
+  padding: 14px;
+  justify-content: end;
+  height: 60px;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+  button {
+    height: 100%;
+    margin: -15px;
+  }
+}
+
+mat-card {
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.zoom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 200px;
+  margin: 5px;
+}
+
+.mat-icon {
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+}
+
+.arrow-buttons {
+  padding: 12px;
+  display: flex;
+  justify-content: end;
+}
+.selected-border {
+  border: 3px solid #69f0ae;
+  transition: border 0.5s ease;
+}

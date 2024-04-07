@@ -1,0 +1,41 @@
+<h1 class="second-element">Edit member</h1>
+<p>Member name: {{ member ? member.login : "" }}</p>
+<form [formGroup]="editForm">
+  <div>
+    <input class="field" name="name" formControlName="login" />
+    @if(loginControl.touched){ @if(loginControl.errors?.['required']){
+    <div class="error">The field name is required.</div>
+    }@else if(loginControl.errors?.['minlength']){
+    <div class="error">
+      Member name must be at least
+      {{ loginControl.errors?.['minlength'].requiredLength }} characters. It has
+      only {{ loginControl.errors?.['minlength'].actualLength }}.
+    </div>
+    } }
+  </div>
+  <div>
+    <p>Avatar:</p>
+    <button class="custom-button" mat-raised-button color="accent">
+      <input
+        class="button-avatar"
+        name="avatar"
+        (change)="handleEditFileInput($event)"
+        type="file"
+        accept="image/*"
+      />
+      Choose image file...
+    </button>
+    <div class="custom-button">
+      <img [src]="avatarControl.value" width="50" />
+    </div>
+  </div>
+  <button
+    class="custom-button"
+    mat-raised-button
+    color="accent"
+    [disabled]="editForm.invalid"
+    (click)="save()"
+  >
+    Change
+  </button>
+</form>

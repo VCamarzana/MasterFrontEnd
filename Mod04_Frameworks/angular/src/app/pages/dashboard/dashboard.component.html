@@ -1,0 +1,20 @@
+<div class="container">
+  <mat-card class="generic-card">
+    <h1>Welcome {{ getUsername() }} !</h1>
+    <h3>Please feel free to rotate the image by clicking on it!</h3>
+    <p>
+      Click to rotate clockwise and <br />
+      hold down the 'Shift' key to rotate counterclockwise.
+    </p>
+    <div class="circle">
+      <img
+        appRotate
+        [rotate]="170"
+        [step]="10"
+        class="rotate-img"
+        src="../../../assets/02iconz.png"
+        alt="Profile Picture"
+      />
+    </div>
+  </mat-card>
+</div>

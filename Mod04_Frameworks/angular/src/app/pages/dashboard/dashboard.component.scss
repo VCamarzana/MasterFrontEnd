@@ -1,0 +1,36 @@
+.generic-card {
+  padding: 20px;
+}
+
+.container {
+  margin: 50px;
+  height: 200px;
+  width: 450px;
+  text-align: center;
+}
+mat-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: rgba(72, 163, 119, 0.8);
+  border: 2px solid rgb(72, 163, 119);
+  overflow: hidden;
+  padding: 40px;
+  margin: 10px;
+  &:active {
+    background-color: rgba(72, 163, 119, 0.7);
+  }
+}
+
+.rotate-img {
+  width: 100%;
+  cursor: grab;
+  &:active {
+    cursor: grabbing;
+  }
+}

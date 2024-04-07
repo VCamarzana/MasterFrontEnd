@@ -1,0 +1,36 @@
+.selected {
+  color: white;
+  background-color: #2c2c2c;
+}
+
+img {
+  padding: 0 30px;
+}
+
+p {
+  font-weight: bold;
+  color: #2c2c2c;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 112px;
+}
+
+a {
+  text-decoration: none;
+  color: #2c2c2c;
+}
+
+.nav-button {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 20px;
+  height: 100px;
+}
+
+a:hover,
+.nav-button:hover {
+  color: #48a377;
+  background-color: #2c2c2c;
+}
