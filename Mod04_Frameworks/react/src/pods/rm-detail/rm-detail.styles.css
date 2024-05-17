@@ -1,0 +1,29 @@
+.rm-body {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.rm-detail-content {
+  max-width: 300px;
+  background-color: rgb(0, 0, 0, 0.75);
+  padding: 30px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.rm-detail-button {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+.rm-link {
+  font-size: large;
+  color: white;
+}
+
+.rm-text span {
+  font-weight: bold;
+  font-size: 1.2em;
+}

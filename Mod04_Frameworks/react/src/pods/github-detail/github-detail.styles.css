@@ -1,0 +1,45 @@
+.github-detail-content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.github-detail-link {
+  text-decoration: none;
+  color: rgb(25, 118, 210);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.github-detail-link:hover {
+  color: lightskyblue;
+}
+
+.github-card {
+  background-color: rgb(236, 241, 255);
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  height: 400px;
+}
+
+.github-detail-img {
+  max-height: 400px;
+  max-width: 402px;
+}
+
+.github-detail-button {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+}
+.github-card-content {
+  padding: 10px;
+}
+.github-card-content h2 {
+  color: rgb(25, 118, 210);
+}
+.github-card-content span {
+  color: rgb(25, 118, 210);
+}

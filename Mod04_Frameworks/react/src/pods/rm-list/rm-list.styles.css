@@ -1,0 +1,82 @@
+.rm-body {
+  background-image: url("@/assets/rick-and-morty03.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-attachment: fixed;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rm-content {
+  min-width: 520px;
+  background-color: rgb(0, 0, 0, 0.75);
+  padding: 50px 30px;
+  height: 100vh;
+}
+.rm-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 1020px;
+  overflow-y: auto;
+  max-height: 620px;
+  margin-bottom: 10px;
+}
+
+.rm-card {
+  width: 240px;
+}
+
+.rm-link {
+  text-decoration: none;
+  color: green;
+}
+
+.rm-text span {
+  font-family: "Courier New", Courier, monospace;
+  color: green;
+}
+
+.rm-search {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 5px 0;
+  margin-right: 30px;
+}
+.rm-input {
+  width: 65%;
+}
+.rm-button {
+  width: 31%;
+  height: 56px;
+}
+input {
+  background-color: #fff;
+}
+
+h3 {
+  margin: 0;
+  padding-bottom: 10px;
+}
+.rm-content h2 {
+  min-width: 240px;
+}
+
+.rm-list::-webkit-scrollbar {
+  width: 15px;
+}
+
+.rm-list::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+.rm-list::-webkit-scrollbar-thumb {
+  background: #2e7d32;
+  border-radius: 5px;
+  border: 2px solid rgba(255, 255, 255);
+}

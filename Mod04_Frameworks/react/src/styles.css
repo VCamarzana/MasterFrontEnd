@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+#outlined-basic {
+  background-color: rgba(255, 255, 255);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: lightskyblue;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(25, 118, 210);
+  border-radius: 5px;
+  border: 1px solid lightskyblue;
+}

@@ -1,0 +1,24 @@
+.status-dead,
+.status-alive,
+.status-unknown,
+.status-other {
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.status-dead {
+  background-color: rgb(209, 0, 0);
+}
+
+.status-alive {
+  background-color: rgb(119, 168, 27);
+}
+
+.status-unknown {
+  background-color: rgb(236, 157, 11);
+}
+
+.status-other {
+  background-color: gray;
+}

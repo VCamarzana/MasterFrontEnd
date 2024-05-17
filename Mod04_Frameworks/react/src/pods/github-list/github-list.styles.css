@@ -1,0 +1,79 @@
+.github-body {
+  background-image: url("@/assets/github01.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.github-container {
+  width: 570px;
+  display: grid;
+  grid-template-columns: 1fr 3fr 4fr;
+  grid-gap: 10px 0px;
+  padding-right: 10px;
+  overflow-y: auto;
+  margin: 10px 0;
+
+  max-height: 470px;
+  color: white;
+}
+.github-container > img {
+  width: 70px;
+  border-radius: 5px 0 0 5px;
+}
+.row:nth-child(odd),
+.github-link:nth-child(even) {
+  background-color: rgb(236, 241, 255, 0.8);
+  padding: 25px;
+}
+.row:nth-child(even),
+.github-link:nth-child(odd) {
+  background-color: rgb(236, 241, 255);
+  padding: 25px;
+}
+.row {
+  color: black;
+}
+
+.github-link {
+  text-decoration: none;
+  color: rgb(25, 118, 210);
+  border-radius: 0 5px 5px 0;
+}
+.github-link:hover {
+  color: chocolate;
+}
+
+.github-search {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.github-input {
+  width: 68%;
+}
+.github-button {
+  width: 30%;
+  height: 56px;
+}
+
+.github-header {
+  display: grid;
+  grid-template-columns: 70px 2fr 10fr;
+  padding-top: 5px;
+}
+.header {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+.error {
+  width: 500px;
+  color: chocolate;
+}
