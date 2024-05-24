@@ -1,0 +1,105 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 50px;
+  background: #f0f0f0;
+  background-image: linear-gradient(transparent 4.8mm, #cee5ff 1mm),
+    linear-gradient(90deg, transparent 4.8mm, #cee5ff 1mm);
+  background-size: 5mm 5mm;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+h2 {
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.todo-container {
+  background-color: #fff8b0;
+  width: 500px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
+}
+
+.todo-container li {
+  display: flex;
+  align-items: flex-start;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.todo-container span {
+  flex-grow: 1;
+  margin: 3px 10px;
+}
+
+.todo-container .completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.add-task-button {
+  border: none;
+  margin: 10px 0 10px 7px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(99, 166, 204);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.add-task-button:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  background-color: rgb(140, 200, 235);
+}
+.add-task-button:active {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.edit-textarea {
+  flex-grow: 1;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+img {
+  min-width: 30px;
+  width: 30px;
+}
+
+input {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+input:focus {
+  outline: none;
+  outline: 2px solid rgb(140, 200, 235);
+}
+@media (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
+
+  .todo-container {
+    width: 100%;
+  }
+}
