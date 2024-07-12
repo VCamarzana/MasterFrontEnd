@@ -1,0 +1,36 @@
+.char-body {
+  color: white;
+  display: flex;
+  justify-content: center;
+  background-image: url('@/assets/rick-and-morty03.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.char-content {
+  max-width: 300px;
+  background-color: rgb(0, 0, 0, 0.75);
+  padding: 30px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.char-button {
+  display: flex;
+  justify-content: center;
+}
+.char-link {
+  text-decoration: none;
+  font-size: large;
+  color: white;
+}
+
+.char-text span {
+  font-weight: bold;
+  font-size: 1.2em;
+}

@@ -1,0 +1,16 @@
+.pagination button,
+.pagination div {
+  color: white;
+}
+
+.pagination li button.Mui-selected {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.pagination li button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.pagination li button.Mui-selected:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.3);
+}
