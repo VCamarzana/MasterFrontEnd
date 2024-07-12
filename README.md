@@ -11,7 +11,7 @@ The objectives of this Master are to train developers specialized in the Front-E
 - Consider important aspects such as security and performance in site and application development.
 - Deploy projects in the cloud using automated processes.
 
-### Sylabus
+### Syllabus
 
 #### UX
 - User Experience.
@@ -120,23 +120,23 @@ The objectives of this Master are to train developers specialized in the Front-E
 - React Native.
 
 ### Areas of Expertise
-**Frontend**
-Figma, React, Nextjs, Angular, Svelte, Vuejs, Flexbox, CSS Grid, Material Design, Jest, Webpack, Vite, HTML5, CSS, JavaScript (ES6/ES7), TypeScript, d3js, CSS in JS, GraphQL, Blazor, Web components, socket.io.
-
-**Methodology**
-- Agile, sprint-based development.
-- Code reviews focused on quality and ease of maintenance.
-- Branch-per-feature using Git as a distributed repository.
-
-**Infrastructure**
-- Docker.
-- Cloud:
-  - Microsoft Azure.
-  - Amazon AWS.
-  - Render.
-- Repositories:
-  - Github.
-
-**Mobility**
-- React Native.
-- PWA.
+    **Frontend**
+    Figma, React, Nextjs, Angular, Svelte, Vuejs, Flexbox, CSS Grid, Material Design, Jest, Webpack, Vite, HTML5, CSS, JavaScript (ES6/ES7), TypeScript, d3js, CSS in JS, GraphQL, Blazor, Web components, socket.io.
+    
+    **Methodology**
+    - Agile, sprint-based development.
+    - Code reviews focused on quality and ease of maintenance.
+    - Branch-per-feature using Git as a distributed repository.
+    
+    **Infrastructure**
+    - Docker.
+    - Cloud:
+      - Microsoft Azure.
+      - Amazon AWS.
+      - Render.
+    - Repositories:
+      - Github.
+    
+    **Mobility**
+    - React Native.
+    - PWA.
