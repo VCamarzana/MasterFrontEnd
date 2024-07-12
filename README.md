@@ -121,7 +121,7 @@ The objectives of this Master are to train developers specialized in the Front-E
 
 ### Areas of Expertise
   **Frontend**
-  Figma, React, Nextjs, Angular, Svelte, Vuejs, Flexbox, CSS Grid, Material Design, Jest, Webpack, Vite, HTML5, CSS, JavaScript (ES6/ES7), TypeScript, d3js, CSS in JS, GraphQL, Blazor, Web components, socket.io.
+  - Figma, React, Nextjs, Angular, Svelte, Vuejs, Flexbox, CSS Grid, Material Design, Jest, Webpack, Vite, HTML5, CSS, JavaScript (ES6/ES7), TypeScript, d3js, CSS in JS, GraphQL, Blazor, Web components, socket.io.
     
   **Methodology**
   - Agile, sprint-based development.
@@ -134,7 +134,7 @@ The objectives of this Master are to train developers specialized in the Front-E
     - Microsoft Azure.
     - Amazon AWS.
     - Render.
-- Repositories:
+  - Repositories:
     - Github.
     
   **Mobility**
